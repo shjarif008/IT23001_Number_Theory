@@ -21,7 +21,7 @@
 
 ---
 
-## 3. Part I: Number Theory
+## Part I: Number Theory
 
 ### Day 0: Divisibility, Remainders and Modular Arithmetic
 
@@ -140,8 +140,6 @@ print(extended_gcd(391, 299))  # (23, -3, 4)     matches the slide: 23 = 391*(-3
 *Edge cases handled:* $b=0$ (base case), $a=b$, and the template's precondition $a \ge b$.
 
 #### 1.3 LCM (Assignment Q2)
-
-For $a,b>0$: $\ \operatorname{lcm}(a,b)\cdot\gcd(a,b) = a\,b$.
 
 ```python
 def lcm(a, b):
@@ -447,8 +445,6 @@ $p\mid a(n)\iff 9p \mid 10^n-1$. If $p\in\{2,5\}$ then $10^n-1$ is coprime to $p
 $\equiv-1 \pmod{5}$), so $A_p=\emptyset$. Otherwise $\gcd(10,9p)=1$, so by Euler $10^{\varphi(9p)}\equiv1$ and
 $A_p$ is non-empty and infinite. **Bonus:**
 
-$$A_p=\{\,n:\ \operatorname{ord}_{9p}(10)\mid n\,\}.$$
-
 ```python
 def repunit_mod(p, n): return ((pow(10, n, 9*p) - 1) // 9) % p
 for p in [3, 7, 11, 13, 37]:
@@ -468,7 +464,7 @@ for p in [3, 7, 11, 13, 37]:
 $$n=\frac{a^{2p}-1}{a^{2}-1}=1+a^2+a^4+\dots+a^{2(p-1)} .$$
 
 $n$ is composite since it equals $\frac{a^p-1}{a-1}\cdot\frac{a^p+1}{a+1}$ with both factors $>1$.
-We have $a^{2p}\equiv1 \pmod n$, so $\operatorname{ord}_n(a)\mid 2p$. It remains to show $2p\mid n-1$:
+We have $a^{2p}\equiv1 \pmod n$, It remains to show $2p\mid n-1$:
 $n-1=a^2+\dots+a^{2p-2}$ has $p-1$ (an even number of) terms, so it is even; and by Fermat
 $p \mid a^{2p-2}-1=(a^2-1)\cdot\frac{a^{2p-2}-1}{a^2-1}$ with $p\nmid a^2-1$, so $p\mid \frac{a^{2p-2}-1}{a^2-1}$ and
 $n-1=a^2\cdot\frac{a^{2p-2}-1}{a^2-1}$ is divisible by $p$. Hence $a^{n-1}\equiv1\pmod n$, and different $p$ give different $n$. ∎
