@@ -1,27 +1,4 @@
-## Table of Contents
-
-1. [How to run](#1-how-to-run)
-2. [Roadmap of the workshop](#2-roadmap-of-the-workshop)
-3. [Part I, Number Theory](#3-part-i--number-theory)
-   - [Day 0: Divisibility and modular arithmetic](#day-0--divisibility-remainders-and-modular-arithmetic)
-   - [Day 1: GCD, Euclid, Diophantine equations, modular division, CRT, fast exponentiation, Fermat and Euler](#day-1--gcd-euclid-diophantine-equations-crt-and-modular-exponentiation)
-   - [Day 2: Primes and primality testing](#day-2--primes-and-primality-testing)
-4. [Part II, Cryptography](#4-part-ii--cryptography)
-   - [Vocabulary and threat model](#41-vocabulary-and-the-alice-bob-eve-model)
-   - [Classical ciphers: XOR, Caesar, Vigenère](#42-classical-ciphers)
-   - [Perfect secrecy, one-time pad, many-time pad](#43-perfect-secrecy-the-one-time-pad-and-why-reuse-is-fatal)
-   - [Computational security and brute force](#44-computational-security)
-   - [Diffie-Hellman](#45-diffie-hellman-key-exchange)
-   - [RSA](#46-rsa)
-   - [Breaking badly-used RSA (Assignment Q1-Q7)](#47-breaking-badly-used-rsa-rsa-assignment-q1q7)
-   - [Shor's algorithm](#48-shors-algorithm-the-classical-skeleton)
-5. [Assignment answers at a glance](#5-assignment-answers-at-a-glance)
-6. [Cheat sheet](#6-cheat-sheet)
-7. [References](#7-references)
-
----
-
-## Part I: Number Theory
+## Number Theory
 
 ### Day 0: Divisibility, Remainders and Modular Arithmetic
 
